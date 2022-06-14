@@ -1,0 +1,42 @@
+name: fast-eci
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - brotlipy=0.7.0=py310h7f8727e_1002
+  - bzip2=1.0.8=h7b6447c_0
+  - ca-certificates=2022.5.18.1=ha878542_0
+  - certifi=2022.5.18.1=py310hff52083_0
+  - cffi=1.15.0=py310hd667e15_1
+  - charset-normalizer=2.0.4=pyhd3eb1b0_0
+  - cryptography=37.0.1=py310h9ce1e76_0
+  - idna=3.3=pyhd3eb1b0_0
+  - ld_impl_linux-64=2.38=h1181459_1
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - libuuid=1.0.3=h7f8727e_2
+  - ncurses=6.3=h7f8727e_2
+  - openjdk=8.0.312=h7f98852_0
+  - openssl=1.1.1o=h166bdaf_0
+  - pip=21.2.4=py310h06a4308_0
+  - pycparser=2.21=pyhd3eb1b0_0
+  - pyopenssl=22.0.0=pyhd3eb1b0_0
+  - pysocks=1.7.1=py310h06a4308_0
+  - python=3.10.4=h12debd9_0
+  - python_abi=3.10=2_cp310
+  - readline=8.1.2=h7f8727e_1
+  - requests=2.27.1=pyhd3eb1b0_0
+  - setuptools=61.2.0=py310h06a4308_0
+  - sqlite=3.38.3=hc218d9a_0
+  - tk=8.6.12=h1ccaba5_0
+  - tzdata=2022a=hda174b7_0
+  - urllib3=1.26.9=py310h06a4308_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h7f8727e_1
+  - zlib=1.2.12=h7f8727e_2
+  - pip:
+    - orekit==11.1
