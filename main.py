@@ -70,10 +70,7 @@ def checkSample(date:AbsoluteDate, pvProv:PVCoordinatesProvider, context:DataCon
     
     # test time points
     testPoints = map(lambda i: date.shiftedBy(float(i) * testStep), range(0, numTests))
-    
-    # fixed earth z-axis rotation
-    rate = Vector3D(0., 0., Constants.WGS84_EARTH_ANGULAR_VELOCITY)
-    
+       
     results = []
     estTime = 0
     actTime = 0
@@ -88,7 +85,7 @@ def checkSample(date:AbsoluteDate, pvProv:PVCoordinatesProvider, context:DataCon
         eStart = time.time()
         if deltaTime > 0:
             rotation = Rotation(Vector3D.PLUS_K, deltaTime * Constants.WGS84_EARTH_ANGULAR_VELOCITY, RotationConvention.FRAME_TRANSFORM)
-            fixedTx = Transform(point, rotation, rate)
+            fixedTx = Transform(point, rotation)
         
         tmp = baselineInertialToFixed.transformPVCoordinates(inertialPv)
         estimatedFixedPv = fixedTx.transformPVCoordinates(tmp)
